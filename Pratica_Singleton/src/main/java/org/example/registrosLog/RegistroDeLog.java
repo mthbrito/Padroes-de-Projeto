@@ -22,7 +22,7 @@ public class RegistroDeLog {
     }
 
     public static RegistroDeLog getInstancia() {
-        if(RegistroDeLog.instancia == null) {
+        if (RegistroDeLog.instancia == null) {
             RegistroDeLog.instancia = new RegistroDeLog();
         }
         return RegistroDeLog.instancia;
@@ -36,4 +36,5 @@ public class RegistroDeLog {
             System.out.println(e.getMessage());
         }
     }
+
 }

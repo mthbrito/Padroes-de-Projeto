@@ -11,5 +11,6 @@ public class Main {
         log1.registrar("Processo finalizado com sucesso.");
 
         System.out.println("Instância única? " + (log1 == log2));
+
     }
 }

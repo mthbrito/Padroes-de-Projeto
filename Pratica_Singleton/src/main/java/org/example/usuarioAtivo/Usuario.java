@@ -7,10 +7,18 @@ package org.example.usuarioAtivo;
 public class Usuario {
 
 
+    private static Usuario instancia;
     private String nome;
 
-    public Usuario(String nome) {
+    private Usuario(String nome) {
         this.nome = nome;
+    }
+
+    public static Usuario getInstancia(String nome) {
+        if (Usuario.instancia == null) {
+            Usuario.instancia = new Usuario(nome);
+        }
+        return Usuario.instancia;
     }
 
     public void exibirInformacoes() {
